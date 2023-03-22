@@ -1,4 +1,4 @@
-.carrossel {}
+.carrossel {margin-bottom: 1em;}
 
 .carrossel__titulo {
     color: var(--laranja-titulo);
