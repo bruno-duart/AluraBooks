@@ -62,8 +62,14 @@
     text-transform: uppercase;
 }
 
+.opções, .opções__botão {
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
-    .container__titulo, .container__titulo--negrito {
+
+    .container__titulo,
+    .container__titulo--negrito {
         font-family: var(--fonte-secundaria);
         font-size: 30px;
     }
@@ -72,7 +78,35 @@
         font-weight: 400;
         display: block;
     }
+
     .container__titulo--negrito {
         font-weight: 700;
+    }
+
+    .opções {
+        display: flex;
+    }
+
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .opções__item {
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+
+    .opções__item__link {
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container__imagem--transparente {
+        display: none;
+    }
+
+    .opções__botão:checked~.lista-menu {
+        display: block;
+        width: auto;
     }
 }
