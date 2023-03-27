@@ -66,6 +66,10 @@
     display: none;
 }
 
+.container__texto {
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
 
     .container__titulo,
@@ -108,5 +112,26 @@
     .opções__botão:checked~.lista-menu {
         display: block;
         width: auto;
+    }
+}
+
+
+@media screen and (min-width:1728px) {
+    .cabecalho {
+        padding: 0 2em;
+    }
+
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .container__texto {
+        display: block;
+    }
+
+    .opções {
+        margin-right: auto;
     }
 }
