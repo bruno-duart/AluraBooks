@@ -43,6 +43,14 @@
     display: block;
 }
 
+.container__botao:checked~.container__rotulo > .cabecalho__menu-hamburguer {
+    background-image: url("../img/Menu\ Aberto.svg");
+}
+
+.container__botao:checked~.container__rotulo {
+    background: var(--azul-degrade);
+}
+
 .lista-menu__titulo,
 .lista-menu__item {
     padding: 1em;
